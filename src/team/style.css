@@ -1,33 +1,53 @@
 .container__button {
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-    padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  padding: 15px 15px;
 }
 
-.container__button p{
-    display: flex;
+.container__button p {
+  display: flex;
 }
 
-.button{
-    background-color: unset;
-    color: #dee2e6;
-    border: 1px solid #dee2e6;
-    border-radius: 0.5rem;
-    margin-left: 15px;
-    padding: 3px 15px;
-    cursor: pointer;
-    font-size: 1.4rem;
+.container__button__incremet {
+  display: flex;
+  align-items: center;
 }
 
-.container__team{
-    border-bottom: 1px solid #dee2e6;
-    padding: 0 15px;
+.container__button__incremet span {
+  font-size: 1.5rem;
+  width: 45px;
+  text-align: center;
 }
 
-.title__team{
-    font-size: 1.4rem;
-    margin: 10px 0;
-    text-decoration: underline;
-    
+.button {
+  background-color: unset;
+  background-color: #5e55454d;
+  color: #dee2e6;
+  border: unset;
+  border-radius: 0.5rem;
+  padding: 3px 15px;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.container__team {
+  background-color: #5e55451a;
+  padding: 10px 15px;
+  margin: 10px 15px;
+  border-radius: 16px;
+}
+
+.title__team {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 10px 0;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.title__team__vitory {
+  color: #a0a180;
+  font-size: 1.3rem;
 }

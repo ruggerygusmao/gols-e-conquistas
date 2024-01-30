@@ -26,25 +26,36 @@ const Team = ({ name, players }) => {
   const updateGoals = (index, value) => {
     const newGoals = [...goals];
     newGoals[index] += value;
-    setGoals(newGoals);
+    if(newGoals[index] >= 0){
+      setGoals(newGoals);
+    }
+
+    
   };
 
   const handleVictory = () => {
     setVictories(victories + 1);
   };
   const handleLoss = () => {
+   if(victories > 0){
     setVictories(victories - 1);
+   }
   };
 
   return (
     <div className="container__team">
-      <h2 className="title__team">{name}</h2>
-      <p>
-       <span>Vitórias: </span>  
-        {victories}
-        <button className="button" onClick={handleLoss}>-</button>
-        <button className="button" onClick={handleVictory}>+</button>
-      </p>
+      <h2 className="title__team">
+        {name}   
+      </h2>
+      <div className="container__button">
+        <span className="title__team__vitory">Vitórias</span>
+        <div className="container__button__incremet">
+          <button className="button" onClick={handleLoss}>-</button>
+            <span>{victories}</span>
+          <button className="button" onClick={handleVictory}>+</button>
+        </div>
+      </div>
+      
       {players.map((player, index) => (
         <Player
           key={index}

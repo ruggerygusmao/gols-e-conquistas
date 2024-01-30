@@ -3,10 +3,11 @@ const Player = ({ name, goals, updateGoals }) => {
   return (
     <div className="container__button">
       <p>
-        {name} - Gols: {goals}
+        {name} 
       </p>
-      <div>
+      <div className="container__button__incremet">
         <button className="button" onClick={() => updateGoals(-1)}>-</button>
+          <span>{goals}</span>
         <button className="button" onClick={() => updateGoals(1)}>+</button>
       </div>
       

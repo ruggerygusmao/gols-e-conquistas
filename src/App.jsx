@@ -5,7 +5,7 @@ import "./style.css"
 function App() {
   return (
     <>
-      <h1 className="title">Gols e Vitórias - 27/01/2024</h1>
+      <h1 className="title">Gols e Vitórias🏆⚽</h1>
       <Team
         name="Time 1"
         players={["Djeimerson", "Juvenaldo", "Messinho", "Robinho", "Maylson"]}
@@ -16,7 +16,7 @@ function App() {
       />
       <Team
         name="Time 3"
-        players={["Ruggery", "Rafael", "Matheus Zacarias", "Vagner", "Anthony"]}
+        players={["Ruggery", "Rafael", "Zacarias", "Vagner", "Anthony"]}
       />
       <Team
         name="Time 4"
