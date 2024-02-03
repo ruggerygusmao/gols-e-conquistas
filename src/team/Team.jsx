@@ -29,8 +29,6 @@ const Team = ({ name, players }) => {
     if(newGoals[index] >= 0){
       setGoals(newGoals);
     }
-
-    
   };
 
   const handleVictory = () => {
@@ -48,7 +46,7 @@ const Team = ({ name, players }) => {
         {name}   
       </h2>
       <div className="container__button">
-        <span className="title__team__vitory">Vitórias</span>
+        <span className="title__team__vitory">Vitórias🏆</span>
         <div className="container__button__incremet">
           <button className="button" onClick={handleLoss}>-</button>
             <span>{victories}</span>

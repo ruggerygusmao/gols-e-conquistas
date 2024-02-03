@@ -23,7 +23,7 @@
 
 .button {
   background-color: unset;
-  background-color: #5e55454d;
+  background-color: #78736c4d;
   color: #dee2e6;
   border: unset;
   border-radius: 0.5rem;
@@ -48,6 +48,6 @@
 }
 
 .title__team__vitory {
-  color: #a0a180;
+  color: #b1c06f;
   font-size: 1.3rem;
 }

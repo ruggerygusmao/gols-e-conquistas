@@ -2,25 +2,26 @@ import Team from "./team/Team";
 import "./style.css"
 
 
+
 function App() {
   return (
     <>
-      <h1 className="title">Gols e Vitórias🏆⚽</h1>
+      <h1 className="title">PELADA DOS AMIGOS - 03/02/24</h1>
       <Team
         name="Time 1"
-        players={["Djeimerson", "Juvenaldo", "Messinho", "Robinho", "Maylson"]}
+        players={["KINHO", "DIEGUINHO", "FAEL", "MAYLSON", "MAYCON"]}
       />
       <Team
         name="Time 2"
-        players={["Edvanio", "Claudemir", "Guga", "Vertinho", "Gaúcho"]}
+        players={["RUGGERY", "EDU", "GUGA", "ANTHONY", "DHON"]}
       />
       <Team
         name="Time 3"
-        players={["Ruggery", "Rafael", "Zacarias", "Vagner", "Anthony"]}
+        players={["KAUAN", "PITICO", "MESSINHO", "VERTINHO", "ISRAEL"]}
       />
       <Team
         name="Time 4"
-        players={["Maurício", "Jamerson Edu", "Fabrício", "Biscoito", "Dhon"]}
+        players={["NEGUINHO", "JUVENALDO", "RAFAEL", "SAMUEL", "GALO"]}
       />
     </>
   );
