@@ -21,7 +21,7 @@ function App() {
       />
       <Team
         name="Time 4"
-        players={["NEGUINHO", "RAFAEL", "FAEL", "RUAN", "ANTHONY"]}
+        players={["NEGUINHO", "RAFAEL", "FAEL", "DIEGUINHO", "ANTHONY"]}
       />
     </>
   );
