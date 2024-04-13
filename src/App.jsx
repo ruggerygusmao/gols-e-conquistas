@@ -6,7 +6,7 @@ import "./style.css"
 function App() {
   return (
     <>
-      <h1 className="title">PELADA DOS AMIGOS - 24/02/24</h1>
+      <h1 className="title">PELADA DOS AMIGOS - 13/04/24</h1>
       <Team
         name="Time 1"
         players={["RAFAEL", "EDU", "ZACARIAS", "TOLOLAU", "ERICO"]}
