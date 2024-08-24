@@ -9,19 +9,19 @@ function App() {
       <h1 className="title">PELADA DOS AMIGOS - 13/04/24</h1>
       <Team
         name="Time 1"
-        players={["RAFAEL VITOR", "KINHO", "LAUDY", "TOLOLAU", "FABRICIO "]}
+        players={["RUGGERY", "FOFINHO", "DIEGUINHO", "SAMUEL", "DIEGO"]}
       />
       <Team
         name="Time 2"
-        players={["DJ", "THIAGO", "ROBSON", "EDI", "FOFINHO"]}
+        players={["MESSINHO", "EDU", "LUCAS", "RAFAEL V", "ANTONY"]}
       />
       <Team
         name="Time 3"
-        players={["RUGGRY", "DIEGUINHO", "FAEL", "MAYLSON", "ANTONY"]}
+        players={["DJ", "ROBSON", "DHON", "FAEL", "CASTELO"]}
       />
       <Team
         name="Time 4"
-        players={["NEGUINHO", "EDU", "PITICO", "JAMERSON", "DHON"]}
+        players={["NEGUINHO", "MAYLSON", "PITICO", "BIRA", "GUGA"]}
       />
     </>
   );
