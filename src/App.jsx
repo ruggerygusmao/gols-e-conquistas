@@ -108,7 +108,6 @@ const App = () => {
         }
 
         .time-unit span {
-          display: block;
           font-size: 1.5rem;
           font-weight: bold;
         }
@@ -122,10 +121,6 @@ const App = () => {
           border-radius: 5px;
         }
 
-        @media (max-width: 600px) {
-          .time-unit {
-            min-width: 80px;
-          }
         }
       `}</style>
     </div>
