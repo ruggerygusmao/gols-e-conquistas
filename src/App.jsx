@@ -68,7 +68,7 @@ const App = () => {
         }
 
         .app-container {
-          max-width: 800px;
+          max-width: 100vw;
           padding: 20px;
           border-radius: 10px;
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
