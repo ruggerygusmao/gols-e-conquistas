@@ -90,8 +90,9 @@ const App = () => {
 
         .time-block {
           display: flex;
+          flex-direction: column,
           justify-content: center;
-          gap: 20px;
+          gap: 15px;
         }
 
         .time-unit {
