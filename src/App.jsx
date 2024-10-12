@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const App = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+  const [isDarkMode, setIsDarkMode] = useState(true); // Set initial mode to dark
 
   const targetDate = new Date('2024-11-15T00:00:00');
 
@@ -27,8 +28,12 @@ const App = () => {
     return () => clearInterval(timer);
   }, []);
 
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <div className="app-container">
+    <div className={`app-container ${isDarkMode ? 'dark-mode' : ''}`}>
       <h1 className="title">Contagem Regressiva para sua Viagem</h1>
       <h2 className="countdown">
         <div className="time-block">
@@ -47,12 +52,14 @@ const App = () => {
         </div>
       </h2>
 
+      <button onClick={toggleDarkMode} className="dark-mode-toggle">
+        {isDarkMode ? "Light Mode" : "Dark Mode"}
+      </button>
+
       <style>{`
         body {
           margin: 0;
           font-family: 'Arial', sans-serif;
-          background: linear-gradient(to right, #6a11cb, #2575fc);
-          color: white;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -65,6 +72,11 @@ const App = () => {
           padding: 20px;
           border-radius: 10px;
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .dark-mode {
+          background: #121212;
+          color: white;
         }
 
         .title {
@@ -90,10 +102,23 @@ const App = () => {
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
+        .dark-mode .time-unit {
+          background: rgba(0, 0, 0, 0.1);
+        }
+
         .time-unit span {
           display: block;
           font-size: 1.5rem;
           font-weight: bold;
+        }
+
+        .dark-mode-toggle {
+          padding: 10px 20px;
+          border: none;
+          background: #333;
+          color: white;
+          cursor: pointer;
+          border-radius: 5px;
         }
 
         @media (max-width: 600px) {
