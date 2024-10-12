@@ -90,7 +90,7 @@ const App = () => {
 
         .time-block {
           display: flex;
-          flex-direction: column,
+          flex-direction: row;
           justify-content: center;
           gap: 15px;
         }
@@ -121,6 +121,23 @@ const App = () => {
           border-radius: 5px;
         }
 
+        /* Media query para mobile */
+        @media (max-width: 768px) {
+          .time-block {
+            flex-direction: column;
+          }
+
+          .time-unit {
+            margin-bottom: 10px;
+          }
+
+          .title {
+            font-size: 2rem;
+          }
+
+          .countdown {
+            font-size: 1.5rem;
+          }
         }
       `}</style>
     </div>
