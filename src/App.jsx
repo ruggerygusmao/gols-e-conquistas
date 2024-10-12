@@ -56,9 +56,6 @@ const App = () => {
         body {
           margin: 0;
           font-family: 'Arial', sans-serif;
-          display: flex;
-          align-items: center;
-          justify-content: center;
           height: 100vh;
           text-align: center;
         }
