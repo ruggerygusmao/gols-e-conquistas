@@ -33,8 +33,8 @@ const App = () => {
   };
 
   return (
-    <div className={`app-container ${isDarkMode ? 'dark-mode' : ''}`}>
-      <h1 className="title">Contagem Regressiva para sua Viagem</h1>
+    <div className="app-container">
+      <h1 className="title">Viagem Rio de Janeiro ✈️🏞️</h1>
       <h2 className="countdown">
         <div className="time-block">
           <div className="time-unit">
@@ -50,11 +50,7 @@ const App = () => {
             <span>{timeLeft.seconds}</span> segundos
           </div>
         </div>
-      </h2>
-
-      <button onClick={toggleDarkMode} className="dark-mode-toggle">
-        {isDarkMode ? "Light Mode" : "Dark Mode"}
-      </button>
+      </h2> 
 
       <style>{`
         body {
