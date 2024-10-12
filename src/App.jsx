@@ -56,7 +56,6 @@ const App = () => {
         body {
           margin: 0;
           font-family: 'Arial', sans-serif;
-          height: 100vh;
           text-align: center;
         }
 
@@ -73,7 +72,7 @@ const App = () => {
         }
 
         .title {
-          font-size: 3rem;
+          font-size: 2.5rem;
           margin: 20px 0;
         }
 
