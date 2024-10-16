@@ -1,10 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const App = () => {
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
   const [isDarkMode, setIsDarkMode] = useState(true); // Set initial mode to dark
 
-  const targetDate = new Date('2024-11-15T00:00:00');
+  const targetDate = new Date("2024-11-15T00:00:00");
 
   const calculateTimeLeft = () => {
     const now = new Date();
@@ -12,7 +17,9 @@ const App = () => {
 
     if (difference > 0) {
       const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const hours = Math.floor(
+        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
       const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
@@ -28,112 +35,116 @@ const App = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
-
   return (
-    <div className="app-container">
-      <h1 className="title">Viagem Rio de Janeiro ✈️🏞️</h1>
-      <h2 className="countdown">
-        <div className="time-block">
-          <div className="time-unit">
-            <span>{timeLeft.days}</span> dias
+    <div className="flex flex-col items-center justify-center gap-3">
+      <div className="p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg max-w-4xl w-full text-center">
+        <h1 className="text-2xl md:text-4xl font-bold mb-6">
+          Missão - Rio de janeiro ✈️🏞️
+        </h1>
+
+        <div className="flex flex-col gap-1 text-2xl">
+          <div className="w-full bg-gray-200 dark:bg-gray-700 p-4 rounded-lg shadow-md mb-6">
+            <span className="text-xl font-bold">{timeLeft.days}</span> dias
           </div>
-          <div className="time-unit">
-            <span>{timeLeft.hours}</span> horas
-          </div>
-          <div className="time-unit">
-            <span>{timeLeft.minutes}</span> minutos
-          </div>
-          <div className="time-unit">
-            <span>{timeLeft.seconds}</span> segundos
+          <div className="flex justify-center items-center gap-6">
+            <div className="w-1/3 bg-gray-200 dark:bg-gray-700 p-4 rounded-lg shadow-md">
+              <span className="text-xl font-bold">{timeLeft.hours} H</span>
+            </div>
+            <div className="w-1/3 bg-gray-200 dark:bg-gray-700 p-4 rounded-lg shadow-md">
+              <span className="text-xl font-bold">{timeLeft.minutes} m</span>
+            </div>
+            <div className="w-1/3 bg-gray-200 dark:bg-gray-700 p-4 rounded-lg shadow-md">
+              <span className="text-xl font-bold">{timeLeft.seconds} s</span>
+            </div>
           </div>
         </div>
-      </h2> 
+      </div>
+      <div className="p-6 rounded-lg text-center">
+        <h2 className="text-2xl font-bold mb-6">Participantes da Viagem</h2>
 
-      <style>{`
-        body {
-          margin: 0;
-          font-family: 'Arial', sans-serif;
-          text-align: center;
-        }
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {/* Card 1 */}
+          <div className="flex flex-col items-center">
+            <img
+              src="https://github.com/ruggerygusmao.png"
+              alt="Pessoa 1"
+              className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover shadow-md"
+            />
+            <p className="mt-4 text-lg font-semibold">Ruggery</p>
+          </div>
 
-        .app-container {
-          max-width: 100vw;
-          padding: 20px;
-          border-radius: 10px;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
+          {/* Card 2 */}
+          <div className="flex flex-col items-center">
+            <img
+              src="https://media-for1-1.cdn.whatsapp.net/v/t61.24694-24/323819736_522114254107349_6344785853539912047_n.jpg?ccb=11-4&oh=01_Q5AaIFHfUitXj-KKsBYGrtJ0VTfjDew3Fl4Qksk8_WjPaWu7&oe=671D1815&_nc_sid=5e03e0&_nc_cat=102"
+              alt="Pessoa 2"
+              className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover shadow-md"
+            />
+            <p className="mt-4 text-lg font-semibold">Rayane</p>
+          </div>
 
-        .dark-mode {
-          background: #121212;
-          color: white;
-        }
+          {/* Card 3 */}
+          <div className="flex flex-col items-center">
+            <img
+              src="https://media-for1-1.cdn.whatsapp.net/v/t61.24694-24/462790092_3767622536821991_1741995600321484957_n.jpg?ccb=11-4&oh=01_Q5AaIBG0vWfeldOfmo7INaUkRuQZDGmqUKuBxCOZKH-ZuHyz&oe=671CE7B1&_nc_sid=5e03e0&_nc_cat=102"
+              alt="Pessoa 3"
+              className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover shadow-md"
+            />
+            <p className="mt-4 text-lg font-semibold">Vinicius</p>
+          </div>
 
-        .title {
-          font-size: 2.5rem;
-          margin: 20px 0;
-        }
+          {/* Card 4 */}
+          <div className="flex flex-col items-center">
+            <img
+              src="https://media-for1-1.cdn.whatsapp.net/v/t61.24694-24/462790092_3767622536821991_1741995600321484957_n.jpg?ccb=11-4&oh=01_Q5AaIBG0vWfeldOfmo7INaUkRuQZDGmqUKuBxCOZKH-ZuHyz&oe=671CE7B1&_nc_sid=5e03e0&_nc_cat=102"
+              alt="Pessoa 4"
+              className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover shadow-md"
+            />
+            <p className="mt-4 text-lg font-semibold">Isabely</p>
+          </div>
+        </div>
+      </div>
 
-        .countdown {
-          font-size: 2rem;
-        }
-
-        .time-block {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          gap: 15px;
-        }
-
-        .time-unit {
-          background: rgba(255, 255, 255, 0.1);
-          padding: 20px;
-          border-radius: 10px;
-          min-width: 100px;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .dark-mode .time-unit {
-          background: rgba(0, 0, 0, 0.1);
-        }
-
-        .time-unit span {
-          font-size: 1.5rem;
-          font-weight: bold;
-        }
-
-        .dark-mode-toggle {
-          padding: 10px 20px;
-          border: none;
-          background: #333;
-          color: white;
-          cursor: pointer;
-          border-radius: 5px;
-        }
-
-        /* Media query para mobile */
-        @media (max-width: 768px) {
-          .time-block {
-            flex-direction: column;
-          }
-
-          .time-unit {
-            margin-bottom: 10px;
-          }
-
-          .title {
-            font-size: 2rem;
-          }
-
-          .countdown {
-            font-size: 1.5rem;
-          }
-        }
-      `}</style>
+      <div className="p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg max-w-4xl w-full text-center">
+        <ul className="flex flex-col gap-4 text-left">
+          <li className="p-4 bg-blue-100 dark:bg-blue-700 rounded-lg shadow-md">
+            <span className="font-bold text-blue-700 dark:text-blue-200">
+              ☀️ Data da viagem:{" "}
+            </span>
+            <span className="text-gray-800 dark:text-gray-100">
+              15/11/24 à 17/11/24
+            </span>
+          </li>
+          <li className="p-4 bg-green-100 dark:bg-green-700 rounded-lg shadow-md">
+            <span className="font-bold text-green-700 dark:text-green-200">
+              ✈️ Hora do Voo (Ida):{" "}
+            </span>
+            <span className="text-gray-800 dark:text-gray-100">
+              12:35 - 15/11
+            </span>
+          </li>
+          <li className="p-4 bg-yellow-100 dark:bg-yellow-700 rounded-lg shadow-md">
+            <span className="font-bold text-yellow-700 dark:text-yellow-200">
+              ✈️ Hora do Voo (Volta):{" "}
+            </span>
+            <span className="text-gray-800 dark:text-gray-100">
+              21:40 - 17/11
+            </span>
+          </li>
+          <li className="p-4 bg-purple-100 dark:bg-purple-700 rounded-lg shadow-md">
+            <span className="font-bold text-purple-700 dark:text-purple-200">
+              🏨 Hospedagem:{" "}
+            </span>
+            <span className="text-gray-800 dark:text-gray-100">
+              Royalty Rio Hotel
+            </span>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
 
 export default App;
+
+//OBS: Lembrar de fazer o Check in dia 13/11.
