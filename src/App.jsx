@@ -37,24 +37,44 @@ const App = () => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-3">
-      <div className="p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg max-w-4xl w-full text-center">
-        <h1 className="text-2xl md:text-4xl font-bold mb-6">
-          Missão - Rio de janeiro ✈️🏞️
-        </h1>
+      <div
+        className="relative p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg max-w-8xl w-full text-center"
+        style={{
+          backgroundImage:
+            "url('https://imgmd.net/images/c_limit%2Cw_1600/v1/guia/1698673/rio-de-janeiro-4-c.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="flex justify-center items-center p-2 w-full rounded-lg">
+          {/* Overlay para opacidade */}
+          <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
 
-        <div className="flex flex-col gap-1 text-2xl">
-          <div className="w-full bg-gray-200 dark:bg-gray-700 p-4 rounded-lg shadow-md mb-6">
-            <span className="text-xl font-bold">{timeLeft.days}</span> dias
-          </div>
-          <div className="flex justify-center items-center gap-6">
-            <div className="w-1/3 bg-gray-200 dark:bg-gray-700 p-4 rounded-lg shadow-md">
-              <span className="text-xl font-bold">{timeLeft.hours} H</span>
-            </div>
-            <div className="w-1/3 bg-gray-200 dark:bg-gray-700 p-4 rounded-lg shadow-md">
-              <span className="text-xl font-bold">{timeLeft.minutes} m</span>
-            </div>
-            <div className="w-1/3 bg-gray-200 dark:bg-gray-700 p-4 rounded-lg shadow-md">
-              <span className="text-xl font-bold">{timeLeft.seconds} s</span>
+          {/* Conteúdo com posição relativa */}
+          <div className="relative z-10">
+            <h1 className="text-2xl md:text-3xl font-bold mb-6">
+            ✈️🏞️ Missão - Rio de Janeiro 
+            </h1>
+
+            <div className="flex flex-col gap-1 text-2xl">
+              <div className="w-full bg-gray-200 dark:bg-gray-800 p-4 rounded-lg shadow-md mb-6 opacity-90">
+                <span className="text-xl font-bold">{timeLeft.days}</span> dias
+              </div>
+              <div className="flex justify-center items-center gap-6">
+                <div className="w-1/3 bg-gray-200 dark:bg-gray-800 p-4 rounded-lg shadow-md opacity-90">
+                  <span className="text-xl font-bold">{timeLeft.hours} H</span>
+                </div>
+                <div className="w-1/3 bg-gray-200 dark:bg-gray-800 p-4 rounded-lg shadow-md opacity-90">
+                  <span className="text-xl font-bold">
+                    {timeLeft.minutes} m
+                  </span>
+                </div>
+                <div className="w-1/3 bg-gray-200 dark:bg-gray-800 p-4 rounded-lg shadow-md opacity-90">
+                  <span className="text-xl font-bold">
+                    {timeLeft.seconds} s
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
