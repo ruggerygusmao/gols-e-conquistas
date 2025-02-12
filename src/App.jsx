@@ -46,7 +46,7 @@ const App = () => {
           className="relative p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg max-w-8xl w-full text-center"
           style={{
             backgroundImage:
-              "url('https://imgmd.net/images/c_limit%2Cw_1600/v1/guia/1698673/rio-de-janeiro-4-c.jpg')",
+              "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4q8lEaH7nGlzmvLeAqBXxSUBnjPGn7l3JWniN0YK4N1vO0KAoXQdvNioO&s=10')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
