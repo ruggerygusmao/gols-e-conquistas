@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import NavigationMenu from "./components/NavigationMenu";
 
 const App = () => {
-  const targetDate = new Date("2024-11-15T00:00:00");
+  const targetDate = new Date("2025-02-21T00:00:00");
   const timeLeft = useCountdown(targetDate);
 
   // Referências para as seções
@@ -55,7 +55,7 @@ const App = () => {
             <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
             <div className="relative z-10">
               <h1 className="text-2xl md:text-3xl font-bold mb-6">
-                ✈️🏞️ Missão - Rio de Janeiro
+                ☀️🏖️ Missão - São Miguel dos Milagres
               </h1>
               <Countdown timeLeft={timeLeft} />
             </div>
