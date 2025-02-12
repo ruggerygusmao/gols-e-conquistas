@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/rio.png";
+import logo from "../assets/beach.png";
 
 const NavigationMenu = ({ scrollToSection }) => {
   const [isOpen, setIsOpen] = useState(false);

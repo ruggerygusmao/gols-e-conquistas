@@ -14,21 +14,21 @@ const TravelItinerary = () => {
         </li>
         <li className="p-4 bg-green-100 dark:bg-green-700 rounded-lg shadow-md">
           <span className="font-bold text-green-700 dark:text-green-200">
-            ✈️ Hora do Voo (Ida):{" "}
+          🚘 Partida:{" "}
           </span>
-          <span className="text-gray-800 dark:text-gray-100">12:35 - 15/11</span>
+          <span className="text-gray-800 dark:text-gray-100">16:00 - 21/02</span>
         </li>
         <li className="p-4 bg-yellow-100 dark:bg-yellow-700 rounded-lg shadow-md">
           <span className="font-bold text-yellow-700 dark:text-yellow-200">
-            ✈️ Hora do Voo (Volta):{" "}
+          🚘 Volta:{" "}
           </span>
-          <span className="text-gray-800 dark:text-gray-100">21:40 - 17/11</span>
+          <span className="text-gray-800 dark:text-gray-100">16:00 - 23/02</span>
         </li>
         <li className="p-4 bg-purple-100 dark:bg-purple-700 rounded-lg shadow-md">
           <span className="font-bold text-purple-700 dark:text-purple-200">
             🏨 Hospedagem:{" "}
           </span>
-          <span className="text-gray-800 dark:text-gray-100">Royalty Rio Hotel</span>
+          <span className="text-gray-800 dark:text-gray-100">Familía de Chys</span>
         </li>
       </ul>
     </div>

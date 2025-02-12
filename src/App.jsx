@@ -70,12 +70,12 @@ const App = () => {
         </div>
         <div ref={itineraryRef}>
           {/* Lembrete (sempre visível) */}
-          <div className="p-4 bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 rounded-md shadow-md mt-2">
+          {/* <div className="p-4 bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 rounded-md shadow-md mt-2">
             <p>
               Lembrar de fazer o Check-in dia{" "}
               <span className="font-bold">13/11/24</span>.
             </p>
-          </div>
+          </div> */}
           {/* SESSÃO DATAS DA VIAGEM */}{" "}
           {/* Referência para a seção "itinerário" */}
           <TravelItinerary />

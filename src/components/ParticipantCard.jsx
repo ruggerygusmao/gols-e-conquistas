@@ -19,17 +19,17 @@ const Participants = () => {
     {
       name: "Rayane",
       imageSrc:
-        "https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/455158393_1192242188539852_8846478617552128522_n.jpg?ccb=11-4&oh=01_Q5AaIDif5OgIQvxlmFrHwfvv58ZkBPZ2jlhBWxxiaWHgQKKd&oe=6731A6A7&_nc_sid=5e03e0&_nc_cat=107",
+        "https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/473397535_1770631127058909_4954110672595243093_n.jpg?ccb=11-4&oh=01_Q5AaIIdjyIcQyQ728NYNLoq3lhcsVvkLtdwvOtivLTvzDBGL&oe=67B9B038&_nc_sid=5e03e0&_nc_cat=104",
     },
     {
       name: "Chrislayne",
       imageSrc:
-        "https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/462790092_3767622536821991_1741995600321484957_n.jpg?ccb=11-4&oh=01_Q5AaIEN3hQYC4EXQdcMSTQia9xIcy6jju053xn-OMVsEBTMf&oe=673237F1&_nc_sid=5e03e0&_nc_cat=102",
+        "https://media-for2-1.cdn.whatsapp.net/v/t61.24694-24/473399283_1121854925735993_1340797915835306611_n.jpg?ccb=11-4&oh=01_Q5AaIOELEhNfMvICIMapGVjY4_PEQubuAAFQhi2SnNFR44aO&oe=67B9B8BD&_nc_sid=5e03e0&_nc_cat=105",
     },
     {
       name: "Marcela",
       imageSrc:
-        "https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/462790092_3767622536821991_1741995600321484957_n.jpg?ccb=11-4&oh=01_Q5AaIEN3hQYC4EXQdcMSTQia9xIcy6jju053xn-OMVsEBTMf&oe=673237F1&_nc_sid=5e03e0&_nc_cat=102",
+        "https://media-for2-1.cdn.whatsapp.net/v/t61.24694-24/429912958_2447807645389421_509776280962281990_n.jpg?ccb=11-4&oh=01_Q5AaIPcX5GNIMHPrBGsW_UYyJrUcT8wHR4RavyIwieCu3fOI&oe=67B9CB2D&_nc_sid=5e03e0&_nc_cat=107",
     },
   ];
 
