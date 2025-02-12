@@ -15,7 +15,7 @@ const ParticipantCard = ({ name, imageSrc }) => {
 
 const Participants = () => {
   const participants = [
-    { name: "Ruggery", imageSrc: "https://github.com/ruggerygusmao.png" },
+    { name: "Ruggery", imageSrc: "https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/469469571_567517312844715_1921183239204951099_n.jpg?ccb=11-4&oh=01_Q5AaIFgl8TE1QeKqBSkwuwwwB80kOghRiX3tHAThkZxRoYkq&oe=67B99C6D&_nc_sid=5e03e0&_nc_cat=110" },
     {
       name: "Rayane",
       imageSrc:

@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import NavigationMenu from "./components/NavigationMenu";
 
 const App = () => {
-  const targetDate = new Date("2025-02-21T00:00:00");
+  const targetDate = new Date("2025-02-21T16:00:00");
   const timeLeft = useCountdown(targetDate);
 
   // Referências para as seções
