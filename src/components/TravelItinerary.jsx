@@ -9,7 +9,7 @@ const TravelItinerary = () => {
             ☀️ Data da viagem:{" "}
           </span>
           <span className="text-gray-800 dark:text-gray-100">
-            15/11/24 à 17/11/24
+            21/02/25 à 23/02/25
           </span>
         </li>
         <li className="p-4 bg-green-100 dark:bg-green-700 rounded-lg shadow-md">
